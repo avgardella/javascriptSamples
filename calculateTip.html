@@ -4,8 +4,6 @@
 <div id="container">
   <h1>Tip Calculator</h1>
   <div id="calculator">
-
-
     <form>
       <p>How much was your bill?
         <p>
@@ -21,12 +19,10 @@
             <option value="0.1">10&#37; &#45; Bad</option>
             <option value="0.05">5&#37; &#45; Terrible</option>
         </select>
-
     </form>
     <p>How many people are sharing the bill?</p>
     <input id="peopleamt" type="text" placeholder="Number of People"> people
     <button type="button" id="calculate">Calculate!</button>
-
   </div>
   <!--calculator end-->
   <div id="totalTip">
@@ -34,10 +30,8 @@
     <small id="each">each</small>
   </div>
   <!--totalTip end-->
-
 </div>
 <!--container end-->
-
 <script>
 //Calculate Tip
 function calculateTip() {
@@ -67,7 +61,6 @@ function calculateTip() {
   //Display the tip
   document.getElementById("totalTip").style.display = "block";
   document.getElementById("tip").innerHTML = total;
-
 }
 
 //Hide the tip amount on load
@@ -77,7 +70,6 @@ document.getElementById("each").style.display = "none";
 //click to call function
 document.getElementById("calculate").onclick = function() {
   calculateTip();
-
 };
 </script>
 </body>
